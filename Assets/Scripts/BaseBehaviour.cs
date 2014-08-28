@@ -3,6 +3,7 @@ using System.Collections;
 
 public class BaseBehaviour : MonoBehaviour 
 {
+  protected bool _paused = false;
   private Transform __transform;
   protected Transform _transform 
   { 
@@ -31,4 +32,13 @@ public class BaseBehaviour : MonoBehaviour
   public virtual void OnTriggerEnter(Collider other) {}
   public virtual void OnTriggerStay(Collider other) {}
   public virtual void OnTriggerExit(Collider other) {}
+
+  public virtual void OnPause() 
+  {
+    _paused = true;
+  }
+  public virtual void OnUnpause() 
+  {
+    _paused = false;
+  }
 }
