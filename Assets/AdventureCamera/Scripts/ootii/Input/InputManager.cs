@@ -24,7 +24,7 @@ namespace com.ootii.Input
         /// <summary>
         /// Determines if we're going to use the xbox controller or not
         /// </summary>
-        private static bool mUseXboxController = true;
+        private static bool mUseXboxController = false;
         public static bool UseXboxController
         {
             get { return mUseXboxController; }
