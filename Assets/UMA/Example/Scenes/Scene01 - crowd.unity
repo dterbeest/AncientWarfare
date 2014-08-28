@@ -332,7 +332,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   randomPool:
   - {fileID: 11400000, guid: 99235657444dbea4080744294ecf2e6d, type: 2}
-  - {fileID: 11400000, guid: 3679be70833c6ad4eae237d92af1a2b4, type: 2}
   generator: {fileID: 518079764}
   umaData: {fileID: 0}
   slotLibrary: {fileID: 46065658}
@@ -340,8 +339,8 @@ MonoBehaviour:
   raceLibrary: {fileID: 2054243461}
   animationController: {fileID: 0}
   atlasResolutionScale: 1
-  generateUMA: 0
-  generateLotsUMA: 1
+  generateUMA: 1
+  generateLotsUMA: 0
   umaCrowdSize: {x: 4, y: 4}
   randomDna: 1
   space: 1
@@ -1269,6 +1268,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 879538282}
     m_Modifications:
+    - target: {fileID: 11400000, guid: f339fe484442bb14a853826f3556fa50, type: 2}
+      propertyPath: randomPool.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f339fe484442bb14a853826f3556fa50, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1313,6 +1316,14 @@ Prefab:
       propertyPath: raceLibrary
       value: 
       objectReference: {fileID: 2054243461}
+    - target: {fileID: 11400000, guid: f339fe484442bb14a853826f3556fa50, type: 2}
+      propertyPath: generateUMA
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f339fe484442bb14a853826f3556fa50, type: 2}
+      propertyPath: generateLotsUMA
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f339fe484442bb14a853826f3556fa50, type: 2}
   m_RootGameObject: {fileID: 787143592}
