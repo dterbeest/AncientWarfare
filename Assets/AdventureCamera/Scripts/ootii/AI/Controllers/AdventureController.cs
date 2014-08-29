@@ -355,7 +355,11 @@ namespace com.ootii.AI.Controllers
         /// </summary>
         public void Update()
         {
-            if (mAnimator == null) { return; }
+            if (mAnimator == null) 
+            { 
+                mAnimator = GetComponent<Animator>();
+                return; 
+            }
 
             // Store the state we're in
             mStateInfo = mAnimator.GetCurrentAnimatorStateInfo(0);
